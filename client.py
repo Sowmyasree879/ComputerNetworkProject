@@ -17,7 +17,7 @@ def ava_files():
 	filename=input("Filename :")
 	return filename
 
-
+#put comments
 def ava_methods():
 	print("select your method from availiable methods")
 	print("------------------------------------------\n")
