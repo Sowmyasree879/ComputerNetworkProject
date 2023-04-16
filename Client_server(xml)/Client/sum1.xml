@@ -1,0 +1,11 @@
+<envelope>
+   <method>sum</method>
+   <arg>3</arg>
+   <arg>12</arg>
+   <arg>5</arg>
+   <arg>2</arg>
+   <arg>22</arg>
+   <arg>100</arg>
+   <arg>12</arg>
+   <arg>5</arg>
+</envelope>
