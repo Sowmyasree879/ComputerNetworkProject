@@ -1,0 +1,1 @@
+<envelope><method>path</method><node><name>A</name><arg>B</arg></node><node><name>B</name><arg>C</arg></node><node><name>C</name><arg>B</arg></node><start>A</start><end>C</end></envelope>
