@@ -1,0 +1,4 @@
+<envelope>
+   <method>reverse</method>
+   <arg>1234</arg>
+</envelope>
