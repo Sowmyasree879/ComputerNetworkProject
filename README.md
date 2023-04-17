@@ -5,6 +5,7 @@ An XML-RPC Application
 Introduction:
 
 The XML-RPC protocol is a popular internet protocol for client-server communication. This protocol enables a client to call methods on a server and get the results of those calls in XML format. We created an XML-RPC application in this project that uses socket communication to transport XML messages between the client and the server. The client can use the server's methods to compute the square of a given number, the sum of a given list of integers, reversing a given string, sorting a list of integers, solving mathematical equations, and finding the shortest path in a graph.
+
 Methodology:
 
 The Python programming language was utilized to create the XML-RPC application. The socket module is used to communicate between the client and the server using sockets. The xml module is used to decode XML messages, while the OS module is used to execute OS activities such as method invocation. A Python script (command: python server.py) on the server receives an XML message from the client, decodes it to execute method invocation, and then provides the result (as an XML message) to the client. The client has a Python script (command: python client.py) that sends an XML message to the server, then receives the server's response (also in the form of an XML message), decodes it, and displays the result on the screen.
@@ -18,6 +19,7 @@ Logic Flow:
 6.The client receives the XML message from the server.
 7.The client decodes the XML message to extract the result of the method invocation.
 8.The client prints the result on the screen.
+
 Program Flow:
 
 1.The server script (server.py) starts by creating a socket and binding it to a specific port.
@@ -50,3 +52,26 @@ The backend working of the application can be explained in the following steps:
 5.Creating the XML response: The server creates an XML response message with the result of the method invocation.
 
 6.Sending the XML response: The server sends the XML response message back to the client over the socket connection.
+
+Program Execution:
+
+Navigate to directory of server in command line.
+Execute command (python server.py).
+Server is started and listening for connection from client
+Now open another terminal and navigate to directory of client in command line.
+Now execute command (python client.py). Note that server is already running on another terminal.
+After you execute command. Client will show you following menu on terminal:
+1. select xml file
+2. generate xml file
+3. exit
+If you click option ‘1’ it will show you pre-generated XML files.
+A file can be selected from the pre-generated files and it will be executed.
+Note in this way you can select any XML file which are pre-generated.
+XML file handles all methods such as square, sum, equation calculator, shortest path, reverse string, sorting. In the screenshot I have shown only sum method but you all options.
+If you want to generate your own XML file. Select option ‘2’.
+select any method for which you wanted to generate xml and give the inputs for the method to be executed.
+This way we can generate any xml file for any method that has been choosen.
+
+Conclusion:
+
+In this project, we have implemented an XML-RPC application that uses socket communication to transfer XML messages between the client and the server. We have shown how to implement several different methods on the server, including methods for computing the square of a given number, computing the sum of a given list of integers, reversing a given string, sorting a list of integers, solving mathematical equations, and finding the shortest path in a graph. We have demonstrated how the client can invoke these methods by sending XML messages to the server, and how the server responds back to the client.
