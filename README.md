@@ -1,5 +1,6 @@
-CSCI6760 Computer Networks Spring 2023
-An XML-RPC Application
+                                                           CSCI6760 Computer Networks Spring 2023
+
+                                                               An XML-RPC Application
 
 
 Introduction:
