@@ -18,3 +18,35 @@ Logic Flow:
 6.The client receives the XML message from the server.
 7.The client decodes the XML message to extract the result of the method invocation.
 8.The client prints the result on the screen.
+Program Flow:
+
+1.The server script (server.py) starts by creating a socket and binding it to a specific port.
+2.The server script listens for incoming connections from clients on this port.
+3.When a client connects to the server, the server script creates a new thread to handle the client's request.
+4.The server script reads the XML message from the client, and decodes it to determine which method to invoke.
+5.The server script invokes the requested method, passing any necessary arguments.
+6.The server script computes the result of the method invocation.
+7.The server script encodes the result as an XML message, and sends it back to the client.
+8.The client script (client.py) starts by creating a socket and connecting to the server on a specific port.
+9.The client script sends XML message to the server.
+10.The client script waits for a response from the server.
+11.The client script receives the response from the server, and decodes it to extract the result of the method invocation.
+12.The client script prints the result on the screen.
+
+Backend Working of XML-RPC:
+
+The backend of the XML-RPC application consists of the server-side code that receives incoming socket connections from clients, parses the XML requests, invokes the appropriate method based on the request, and sends the result back to the client in an XML response.
+
+The backend working of the application can be explained in the following steps:
+
+1.Setting up the server: The server is set up to listen for incoming socket connections from clients. The server can be set up on any machine with a network connection and a Python environment.
+
+2.Handling incoming socket connections: When a client establishes a socket connection with the server, the server accepts the connection and starts receiving the XML request message from the client.
+
+3.Parsing the XML request: The server parses the XML request message to extract the method name and the input parameters. The xml module in Python can be used for parsing the XML messages.
+
+4.Invoking the method: Based on the method name in the XML request message, the server invokes the appropriate method with the input parameters. The method can be any python file at server side  that takes input parameters and returns a result.
+
+5.Creating the XML response: The server creates an XML response message with the result of the method invocation.
+
+6.Sending the XML response: The server sends the XML response message back to the client over the socket connection.
